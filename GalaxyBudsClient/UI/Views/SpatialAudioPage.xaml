@@ -1,0 +1,21 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="GalaxyBudsClient.UI.Views.SpatialAudioPage">
+
+    <StackPanel Spacing="20" Margin="20">
+        <TextBlock Text="Spatial Audio & Head Tracking" FontSize="18" FontWeight="Bold"/>
+        
+        <CheckBox IsChecked="{Binding IsSpatialAudioEnabled}" Content="Enable Head-Tracked Spatial Audio"/>
+        
+        <Button Content="Import Convolution EQ from AutoEq" 
+                Command="{Binding ImportConvolutionEQCommand}" />
+        
+        <Button Content="Load SOFA HRTF File" 
+                Command="{Binding LoadSOFACommand}" />
+        
+        <TextBlock Text="Current Orientation: {Binding CurrentOrientation}" />
+    </StackPanel>
+</UserControl>
