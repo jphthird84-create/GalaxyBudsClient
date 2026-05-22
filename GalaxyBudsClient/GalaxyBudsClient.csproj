@@ -128,6 +128,7 @@
         <!-- Workaround: force include SkiaSharp 3.x libraries for Linux; this is already implicitly the case for other platforms -->
         <PackageReference Include="SkiaSharp.NativeAssets.Linux" Version="3.119.1" />
         <PackageReference Include="Tmds.DBus" Version="0.21.2" />
+        <PackageReference Include="NAudio" Version="2.2.1" />
     </ItemGroup>
 
 
